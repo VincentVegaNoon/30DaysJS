@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  height: 120vh;
+}
+.wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+h2 {
+  margin: 20px;
+}
+.time {
+  margin: 20px;
+  padding: 10px;
+}
+ul {
+  width: 60%;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  margin: 3px;
+  background-color: lightgreen;
+}
+details p {
+  /* text-align: center; */
+  padding: 5px;
+  /* padding-top: 10px; */
+}
+.sectionOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-top: 3vh;
+  font-size: 28px;
+}
+.container-awesome {
+  margin-top: 1vh;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 10vw;
+}
+.sectionOne a {
+  font-size: 24px;
+  color: black;
+}
+.sectionOne .bio {
+  width: 70vw;
+  font-size: 18px;
+  margin-top: 3vh;
+  text-align: center;
+}
+.sectionTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70vw;
+  margin-top: 3vh;
+}
+.sectionTwo div {
+  font-size: 24px;
+}
+.sectionTwo div p {
+  font-size: 14px;
+}
+.sectionThree {
+  margin-top: 3vh;
+}
+.sectionThree h3 {
+  font-size: 18px;
+}
+.sectionThree div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70vw;
+  margin-top: 1vh;
+}
+.sectionThree p {
+  /* background-color: blue; */
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 14px;
+  margin: 3px;
+}

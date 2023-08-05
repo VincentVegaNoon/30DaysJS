@@ -3,30 +3,39 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   width: 100%;
 }
+
 .container {
   position: absolute;
   display: flex;
   left: 10%;
   flex-wrap: wrap;
   width: 80%;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
 }
+
 .container div {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin: 2px;
   font-size: 14px;
   color: black;
-  border: 2px solid black;
+  border: 2px solid gray;
+  text-align: center;
 }
+
 h1 {
+  margin: 40px;
+  text-align: center;
+}
+
+h2 {
   margin: 40px;
   text-align: center;
 }

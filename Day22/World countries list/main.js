@@ -1,5 +1,7 @@
 const countriesAPI = "https://restcountries.com/v2/all";
 const container = document.querySelector(".container");
+const h2 = document.querySelector(".countriesNumber");
+const divs = document.querySelectorAll(".container div");
 
 async function fetchCountriesInfo() {
   try {
@@ -22,6 +24,8 @@ async function fetchCountriesInfo() {
 
 fetchCountriesInfo().then((countriesInfo) => {
   createDivs(countriesInfo);
+  const divs = document.querySelectorAll(".container div");
+  h2.textContent = divs.length;
 });
 
 function createDivs(data) {
