@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 20px 45px;
+  text-align: center;
+  font-size: 48px;
+  border: 2px solid rgb(243, 243, 243);
+  box-shadow: 5px 3px 5px black;
+}
+.code {
+  display: none;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 150px;
+  text-align: center;
+  line-height: 200px;
+  border: 2px solid rgb(243, 243, 243);
+  box-shadow: 5px 3px 5px black;
+  font-size: 90px;
+  color: #5abc7a;
+}
+span {
+  color: #5abc7a;
+}
