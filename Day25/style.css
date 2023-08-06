@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: #79d0f2;
+  border-bottom: 2px solid #79d0f2;
+  box-shadow: 5px 5px 5px #79d0f2;
+}
+header h2 {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  font-size: 45px;
+  color: #f2cd88;
+}
+header p {
+  margin-bottom: 1vh;
+  color: #f2cd88;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  /* background-color: #5cb9f2; */
+}
+.buttons.wrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: #5cb9f2;
+}
+button {
+  margin-top: 2vh;
+  margin-left: 1vw;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #011c40;
+  color: #f2cd88;
+}
+.graph-title {
+  margin: 1vh;
+}
+.graphs {
+  display: grid;
+  width: 100vw;
+  height: 80vh;
+  background-color: #f2cd88;
+}
+.graph-wrapper {
+  box-sizing: border-box;
+  display: grid;
+  padding: 0 40px 0 40px;
+  width: 100vw;
+  height: 80vh;
+}
+.graph-wrapper section {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-content: center;
+  align-items: center;
+  margin-right: 1%;
+  height: 5vh;
+}
+.graph-wrapper section div {
+  left: 40%;
+  height: 3vh;
+  background-color: #011c40;
+}
+.graph-wrapper section p {
+  text-align: center;
+  color: #011c40;
+}
