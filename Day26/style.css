@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: url(images/globe-2.jpg);
+  background-size: cover; */
+  height: 50vh;
+}
+.image-overlay {
+  position: absolute;
+  background-image: url(images/globe-2.jpg);
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  z-index: -1;
+}
+.image-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#3126c954, #4753d83a);
+}
+header h1 {
+  margin-top: 8vh;
+  font-size: 52px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+header h3 .containInfo {
+  color: rgb(50, 192, 50);
+}
+
+.buttonsSection button {
+  margin: 3vh 1vw 2vh 0;
+  padding: 10px;
+  background: linear-gradient(#5048bd, #4753d8);
+  box-shadow: 2px 2px 2px #8043e4;
+  font-weight: 100;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+button.active {
+  transform: scale(0.98);
+  background: linear-gradient(#241e7a, #4753d8);
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  width: 45vw;
+  height: 3vh;
+  border-radius: 24px;
+  color: black;
+}
+.search input::placeholder {
+  text-align: center;
+}
+.search p i {
+  margin-left: 1vw;
+  font-size: 24px;
+}
+.countriesListSection {
+  width: 100vw;
+  display: grid;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 2vh;
+  align-content: space-around;
+  justify-items: center;
+}
+.countriesListSection div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 12vw;
+  height: 12vw;
+  /* margin: 2vh 1vw 1vh 1vw; */
+  background-image: url(images/map_image.jpg);
+  background-size: cover;
+}
+.countriesListSection div::before {
+  content: "";
+  position: absolute;
+  width: 12vw;
+  height: 12vw;
+  background: linear-gradient(#3026c97c, #23242e77);
+  border-radius: 8px;
+}
+.countriesListSection div p {
+  color: white;
+  font-size: 20px;
+  z-index: 1;
+}
