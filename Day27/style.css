@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 4vh;
+}
+h1 {
+  font-size: 60px;
+  letter-spacing: 12px;
+}
+.titles {
+  background-color: bisque;
+  height: 6vh;
+  line-height: 6vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.titles p {
+  font-size: 24px;
+  margin-left: 3vw;
+  animation: example 2s;
+}
+h2 {
+  font-size: 22px;
+  margin-bottom: 3vh;
+  font-weight: 300;
+}
+h3 .topics {
+  opacity: 0.3;
+  animation: titleAppear 2s;
+}
+.courses {
+  display: flex;
+  justify-content: space-around;
+}
+.courses div {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 18vh;
+  height: 15vh;
+  padding: 15px;
+  border: 1px solid rgb(189, 176, 176);
+  text-transform: uppercase;
+}
+.courses div:hover {
+  transform: scale(1.2);
+  background-color: blanchedalmond;
+}
+h3 {
+  margin-top: 3vh;
+  font-weight: 300;
+}
+h3 span {
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@keyframes example {
+  from {
+    margin-left: 3vw;
+  }
+  to {
+    margin-left: 10vw;
+  }
+}
+@keyframes titleAppear {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
