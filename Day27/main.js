@@ -12,19 +12,19 @@ const titlesChange = () => {
 
   const changeContent = () => {
     title.textContent = titles[titleIndex].join(" ");
-    title.style.animation = `example ${animationDuration / 1000}s`;
+    // title.style.animation = `example ${animationDuration / 1000}s`;
 
     topic.textContent = topics[topicIndex];
-    topic.style.animation = `titleAppear ${animationDuration / 1000}s`;
+    // topic.style.animation = `titleAppear ${animationDuration / 1000}s`;
     changeColor();
 
-    title.addEventListener("animationend", () => {
-      title.style.animation = "none";
-    });
+    // title.addEventListener("animationend", () => {
+    //   title.style.animation = "none";
+    // });
 
-    topic.addEventListener("animationend", () => {
-      topic.style.animation = "none";
-    });
+    // topic.addEventListener("animationend", () => {
+    //   topic.style.animation = "none";
+    // });
 
     titleIndex = (titleIndex + 1) % titles.length;
     topicIndex = (topicIndex + 1) % topics.length;

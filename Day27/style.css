@@ -22,7 +22,7 @@ h1 {
 .titles p {
   font-size: 24px;
   margin-left: 3vw;
-  animation: example 2s;
+  animation: example 2s infinite;
 }
 h2 {
   font-size: 22px;
@@ -31,7 +31,7 @@ h2 {
 }
 h3 .topics {
   opacity: 0.3;
-  animation: titleAppear 2s;
+  animation: titleAppear 2s infinite;
 }
 .courses {
   display: flex;
