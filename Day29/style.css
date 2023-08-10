@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  margin: 5vh 5vw;
+  height: 90vh;
+  width: 90vw;
+  background-color: aqua;
+}
+h1 {
+  font-size: 64px;
+  text-transform: uppercase;
+  opacity: 1;
+  /* transition: opacity 2s; */
+  /* animation: example 3s infinite; */
+}
+
+@keyframes example {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
