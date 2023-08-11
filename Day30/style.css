@@ -46,13 +46,15 @@ input {
   font-size: 24px;
   width: 30%;
   border-radius: 14px;
+  background-color: orange;
+  border: 0;
 }
-.active {
-  transform: scale(1.2);
-  background-color: aqua;
+.buttonsFlags button i {
+  font-size: 20px;
 }
-.buttonsFlags p i {
+.buttonsFlags a i {
   font-size: 34px;
+  color: orange;
 }
 .countriesInfo {
   display: flex;
@@ -88,4 +90,48 @@ input {
 .countriesInfo p {
   display: flex;
   width: 8vw;
+}
+.buttonsGraphs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40vh;
+}
+.buttonsGraphs button {
+  font-size: 24px;
+  width: 30%;
+  border-radius: 14px;
+  background-color: orange;
+  border: 0;
+  margin-left: 2vw;
+}
+
+.countriesGraphs {
+  display: grid;
+  width: 100vw;
+  background-color: rgb(199, 185, 185);
+}
+.graph-wrapper {
+  box-sizing: border-box;
+  display: grid;
+  padding: 0 40px 0 40px;
+  width: 100vw;
+}
+.graph-wrapper section {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-content: center;
+  align-items: center;
+  margin-right: 1%;
+  height: 5vh;
+}
+.graph-wrapper section div {
+  left: 40%;
+  height: 3vh;
+  background-color: #011c40;
+}
+.graph-wrapper section p {
+  text-align: center;
+  color: #011c40;
 }
