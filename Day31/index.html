@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="title">Validating Web Forms</h1>
+    <section class="firstName">
+      <h1 class="firstName">First Name</h1>
+      <input class="firstName" type="text" />
+      <p class="firstName">
+        First name must be alphanumeric and contain 3 - 16 characters
+      </p>
+    </section>
+    <section class="lastName">
+      <h1 class="lastName">Last Name</h1>
+      <input class="lastName" type="text" />
+      <p class="lastName">
+        Last name must be alphanumeric and contain 3 - 16 characters
+      </p>
+    </section>
+    <section class="email">
+      <h1 class="email">Email</h1>
+      <input class="email" type="text" />
+      <p class="email">
+        Email must be alphanumeric(@,_and - are also allowed) and between 6 - 20
+        characters
+      </p>
+    </section>
+    <section class="password">
+      <h1 class="password">Password</h1>
+      <input class="password" type="text" />
+      <p class="password">
+        Password must be alphanumeric(@,_and - are also allowed) and between 6 -
+        20 characters
+      </p>
+    </section>
+    <section class="telephone">
+      <h1 class="telephone">Telephone</h1>
+      <input class="telephone" type="text" />
+      <p class="telephone">
+        A valid Telephone number (10 digits and 333-333-3334)
+      </p>
+    </section>
+    <section class="bio">
+      <h1 class="bio">Your bio</h1>
+      <input class="bio" type="text" />
+      <p class="bio">
+        Bio must contain only lowercase letters,underscores,hyphens and be 8-50
+        characters
+      </p>
+    </section>
+    <button>Submit</button>
+    <script src="main.js"></script>
+  </body>
+</html>
