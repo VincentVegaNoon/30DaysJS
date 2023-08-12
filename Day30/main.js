@@ -8,22 +8,20 @@ const btnPopulation = document.querySelector(".btnPopulation");
 const btnLanguages = document.querySelector(".btnLanguages");
 const graphsH2 = document.querySelector(".graphsH2");
 const h3 = document.querySelector("h3");
-
-// let sortingOrder = "asc";
 let isReversed = false;
 
-const createCountryInfo = (filterValue = "") => {
+const createCountryInfo = (filterValue = "", h3count) => {
+  h3count = [];
   let filteredCountries = countries_data.slice();
   countriesInfo.innerHTML = "";
   graphWrapper.innerHTML = "";
-  let h3count = 0;
   if (nameBtn.classList.contains("active")) {
     if (isReversed) {
       filteredCountries.reverse();
     }
     for (const country of filteredCountries) {
       if (country.name.toLowerCase().includes(filterValue.toLowerCase())) {
-        createElement(country);
+        createElement(country, h3count);
       }
     }
   } else if (capitalBtn.classList.contains("active")) {
@@ -43,7 +41,7 @@ const createCountryInfo = (filterValue = "") => {
         country.capital &&
         country.capital.toLowerCase().includes(filterValue.toLowerCase())
       ) {
-        createElement(country);
+        createElement(country, h3count);
       }
     }
   } else if (populationBtn.classList.contains("active")) {
@@ -53,7 +51,7 @@ const createCountryInfo = (filterValue = "") => {
     }
     for (const country of filteredCountries) {
       if (country.name.toLowerCase().includes(filterValue.toLowerCase())) {
-        createElement(country);
+        createElement(country, h3count);
       }
     }
   } else {
@@ -75,10 +73,9 @@ const createCountryInfo = (filterValue = "") => {
       }
     }
   }
+  h3.textContent = `${h3count.length} countries satisfied criteria`;
 };
 const createElement = (country, h3count) => {
-  // h3count += 1;
-  // console.log(h3count);
   const div = document.createElement("div");
   const img = document.createElement("img");
   const h1 = document.createElement("h1");
@@ -101,13 +98,13 @@ const createElement = (country, h3count) => {
   } else if (btnPopulation.classList.contains("active")) {
     createGraphPopulation(country);
   }
-  // criteriaNumber(h3count);
+  h3count.push("1");
+  criteriaNumber(h3count);
 };
 
-// const criteriaNumber = (h3count) => {
-//   h3count;
-//   h3.textContent = `${h3count} countries satisfied criteria`;
-// };
+const criteriaNumber = (h3count) => {
+  h3.textContent = `${h3count.length} countries satisfied criteria`;
+};
 
 const createGraphLang = (country) => {
   graphsH2.textContent = "Languages";
@@ -150,7 +147,8 @@ const createGraphPopulation = (country) => {
 };
 
 input.addEventListener("input", (event) => {
-  createCountryInfo(event.target.value);
+  let h3count = [];
+  createCountryInfo(event.target.value, h3count);
 });
 
 createCountryInfo();

@@ -3,7 +3,6 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -64,8 +63,8 @@ input {
   margin-top: 3vh;
   margin-bottom: 3vh;
   width: 100vw;
+  max-width: 100vw;
   background-color: rgb(199, 185, 185);
-  padding: 1vh;
 }
 .countriesInfo div {
   display: flex;
@@ -85,7 +84,7 @@ input {
   padding-top: 5px;
   width: 8vw;
   height: 12vh;
-  object-fit: fill;
+  /* object-fit: contain; */
 }
 .countriesInfo p {
   display: flex;
@@ -94,7 +93,7 @@ input {
 .buttonsGraphs {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 40vh;
 }
@@ -104,9 +103,7 @@ input {
   border-radius: 14px;
   background-color: orange;
   border: 0;
-  margin-left: 2vw;
 }
-
 .countriesGraphs {
   display: grid;
   width: 100vw;
@@ -123,6 +120,7 @@ input {
   grid-template-columns: 1fr 2fr 1fr;
   align-content: center;
   align-items: center;
+  justify-items: start;
   margin-right: 1%;
   height: 5vh;
 }
